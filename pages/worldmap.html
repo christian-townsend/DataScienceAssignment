@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>World Map</title>
+</head>
+
+<!--Site Navigation Menu Using Bootstrap-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: cyan;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="machinelearning.html">Machine Learning</a>
+            <a class="nav-item nav-link" href="datavisualisation.html">Data Visualisation</a>
+            <a class="nav-item nav-link active" href="worldmap.html">World Map</a>
+            <a class="nav-item nav-link" href="contactabout.html">About</a>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+    <div id="page-container">
+        <div class="worldmap">
+            <!--- Section for Title and subtitle + background image -->
+            <div class="heading">
+                <h1 Style="padding-top: 60px;">The Big Players.</h1>
+            </div>
+            <div class="heading">
+                <h2>See the pinpoint locations of the world's largest tech companies.</h2>
+            </div>
+        </div>
+
+        <div id="googleMap" style="width:100%;height:800px;"></div>
+
+        <!--IBM Watson at work video at bottom of the page-->
+        <div class="videoWrapper" style="padding-left: 0px; padding-right: 0%;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8o44asJt8ZA" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <footer>
+            <em>Made by Christian Townsend (u3146441).</em>
+        </footer>
+
+    </div>
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC8oGYK12_9FqYEWKDVyrmOegDEl88pE0U"></script>
+    <script src="/js/map.js"></script>
+
+</body>
+
+</html>
